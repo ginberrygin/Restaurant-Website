@@ -50,6 +50,16 @@ small {
   object-fit: cover;
   border-radius: 50%;
 }
+.logoholder h1 {
+  text-shadow: 2px 2px 3px#fc9438;
+}
+/* Box-shadow */
+/* h1 {
+  width: 100px;
+  height: 100px;
+  box-shadow: 3px 3px 5px;
+  background-color: rgb(234, 234, 234);
+} */
 
 .logoholder h1 {
   margin-top: 10px;
@@ -85,14 +95,24 @@ li.active a {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-/* li a:hover {
+/* Styling the about us section */
+
+.aboutus {
+  margin-top: 50px;
+}
+button {
   background-color: #16a34a;
-  transform: translateY(-2px);
-  border-bottom-right-radius: #fc9438;
+  padding: 10px 15px;
   color: whitesmoke;
-  padding: 5px 10px;
-  border-radius: 5px;
-} */
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
 li a:hover:not(.active) {
   background-color: #16a34a;
   color: whitesmoke;
@@ -100,4 +120,23 @@ li a:hover:not(.active) {
   border-radius: 5px;
   /* Bottom Effect */
   border-bottom: 3px solid #fc9438;
+}
+.aboutholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex: 2;
+}
+.para {
+  margin-top: -30px;
+}
+.para p {
+  color: #fc9438;
+  font-weight: 900;
+}
+
+.paraImage {
+  margin-top: -80px;
 }
