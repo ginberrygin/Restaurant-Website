@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      .slide {
+        width: 200px;
+        height: 20px;
+        animation-name: hajimeCohort;
+        animation-duration: 1s, 2s;
+      }
+
+      @keyframes hajimeCohort {
+        from {
+          transform: translateY(300px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+    <div class="slide">
+      <img src="asset/images/food1.png" />
+    </div>
+  </body>
+</html>

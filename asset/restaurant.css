@@ -164,23 +164,11 @@ li a:hover:not(.active) {
   border-radius: 6px;
   box-shadow: 3px 3px 8px #b5c98a;
   /* Transistion properties */
-  animation-name: slideAndRotate;
-  animation: slideAndRotate 2s ease;
-  /* animation-duration: 1s, 2s; */
-  /* animation-timing-function: ease, linear; */
-  /* animation-iteration-count: 1, infinite; */
-}
-@keyframes slideAndRotate {
-  from {
-    transform: translateX(300px) rotate(0deg);
-  }
-
-  to {
-    transform: translateX(0) rotate(360deg);
-  }
+  animation-name: slideLeft;
+  animation-duration: 1s, 2s;
 }
 
-/* @keyframes SlideLeft {
+@keyframes slideLeft {
   from {
     transform: translateX(300px);
   }
@@ -188,16 +176,6 @@ li a:hover:not(.active) {
     transform: translateX(0);
   }
 }
-
-@keyframes slideRotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-} */
 /* add mobile responsiveness */
 @media (max-width: 768px) {
   .heroSection {
